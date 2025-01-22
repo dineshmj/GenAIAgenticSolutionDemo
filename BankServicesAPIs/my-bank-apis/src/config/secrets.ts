@@ -1,0 +1,1 @@
+export const JWT_SIGNING_KEY = 's3cr3t!@#K3y$h0ulD*b3_V3ryL0ng&CompL3x2025^JWT';
