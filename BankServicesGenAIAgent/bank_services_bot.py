@@ -53,7 +53,7 @@ def call_bank_account_api(inputs):
     else:
         response.raise_for_status()
 
-def home_loan_api(inputs):
+def call_home_loan_api(inputs):
     """
     Calls the REST API to create a home loan using the provided inputs.
     """
@@ -62,7 +62,7 @@ def home_loan_api(inputs):
         "customerName": inputs['customerName'],
         "customerId": int(inputs['customerId']),
         "loanAmount": float(inputs['loanAmount']),
-        "location": inputs['propertyLocation'],
+        "location": inputs['location'],
         "loanTenure": int(inputs['loanTenure'])
     }
     response = requests.post("http://localhost:3000/homeloans", headers=headers, json=payload)
@@ -126,7 +126,7 @@ def main():
         {
             "type": "function",
             "function": {
-                "name": "bank_account_api",
+                "name": "call_bank_account_api",
                 "description": "Creates a new savings bank account for the customer.",
                 "parameters": {
                     "type": "object",
@@ -144,7 +144,7 @@ def main():
         {
             "type": "function",
             "function": {
-                "name": "home_loan_api",
+                "name": "call_home_loan_api",
                 "description": "Processes a home loan application for the customer.",
                 "parameters": {
                     "type": "object",
@@ -152,10 +152,10 @@ def main():
                         "customerName": {"type": "string", "description": "Full name of the customer"},
                         "customerId": {"type": "integer", "description": "Unique customer ID"},
                         "loanAmount": {"type": "number", "description": "Requested loan amount"},
-                        "propertyLocation": {"type": "string", "description": "Location of the property"},
+                        "location": {"type": "string", "description": "Location of the property"},
                         "loanTenure": {"type": "integer", "description": "Loan tenure in years"},
                     },
-                    "required": ["customerName", "customerId", "loanAmount", "propertyLocation", "loanTenure"]
+                    "required": ["customerName", "customerId", "loanAmount", "location", "loanTenure"]
                 }
             }
         }
@@ -184,11 +184,11 @@ def main():
             # Add JWT token to arguments collection.
             function_args["token"] = jwt_token
             
-            if function_name == "bank_account_api":
+            if function_name == "call_bank_account_api":
                 account_id = call_bank_account_api(function_args)
                 print(f"\nMina: Your Savings Bank Account has been created successfully. Your Account ID is {account_id}.")
-            elif function_name == "home_loan_api":
-                loan_id = home_loan_api(function_args)
+            elif function_name == "call_home_loan_api":
+                loan_id = call_home_loan_api(function_args)
                 print(f"\nMina: Your Home Loan has been created successfully. Your Loan ID is {loan_id}.")
             else:
                 print("\nMina: Unknown function call!")

@@ -3,8 +3,8 @@ Home Loan indicating messages from the user:
 
     I am Chuck Burne, and I have just moved in to Brisbane. I am thinking to buy a house here.
 
-    I am Chuck Burne, and I'm a customer of your bank. My Customer ID is 1024.
-    I have just moved in to Brisbane, and I am thinking to buy a house here.
+    I am Chuck Burne. I am already a customer in your bank, and my Customer ID is 1024.
+    I have just moved in to Brisbane, and I am thinking to buy an Apartment here.
 
 
 Savings Bank Account indicating messgaes from the user:
@@ -12,5 +12,5 @@ Savings Bank Account indicating messgaes from the user:
 
     I am Chuck Burne, and I have just moved in to Brisbane as I got a job here. But I don't have any Savings Bank Accounts here.
 
-    I am Chuck Burne. I am a customer in your bank, and my Customer ID is 1024.
+    I am Chuck Burne. I am already a customer in your bank, and my Customer ID is 1024.
     I got a new job in 'Kelvin Grove' town in Brisbane. However, I don't have any bank accounts to use as Salary Account in that town.

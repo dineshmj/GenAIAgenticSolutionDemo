@@ -231,7 +231,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"customerName\": \"Tom Hank\",\r\n    \"customerId\": 1956,\r\n    \"loanAmount\": 11000,\r\n    \"propertyLocation\": \"Adelaide\",\r\n    \"loanTenure\": 114\r\n}\r\n",
+					"raw": "{\r\n    \"customerName\": \"Tom Hank\",\r\n    \"customerId\": 1956,\r\n    \"loanAmount\": 11000,\r\n    \"location\": \"Adelaide\",\r\n    \"loanTenure\": 114\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -269,7 +269,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"customerName\": \"\",\r\n    \"loanAmount\": 6000,\r\n    \"propertyLocation\": \"\",\r\n    \"loanTenure\": 3\r\n}\r\n",
+					"raw": "{\r\n    \"customerName\": \"\",\r\n    \"loanAmount\": 6000,\r\n    \"location\": \"\",\r\n    \"loanTenure\": 3\r\n}\r\n",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -307,7 +307,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":4,\r\n    \"customerName\": \"Tom Hank New\",\r\n    \"customerId\": 1956,\r\n    \"loanAmount\": 11000,\r\n    \"propertyLocation\": \"Gold Coast\",\r\n    \"loanTenure\": 12\r\n}",
+					"raw": "{\r\n    \"id\":4,\r\n    \"customerName\": \"Tom Hank New\",\r\n    \"customerId\": 1956,\r\n    \"loanAmount\": 11000,\r\n    \"location\": \"Gold Coast\",\r\n    \"loanTenure\": 12\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -383,7 +383,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"id\":5,\r\n    \"customerName\": \"\",\r\n    \"loanAmount\": 6000,\r\n    \"propertyLocation\": \"\",\r\n    \"loanTenure\": 3\r\n}",
+					"raw": "{\r\n    \"id\":5,\r\n    \"customerName\": \"\",\r\n    \"loanAmount\": 6000,\r\n    \"location\": \"\",\r\n    \"loanTenure\": 3\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -615,7 +615,7 @@
 			"response": []
 		},
 		{
-			"name": "addHomeLoan - Happy Path Copy",
+			"name": "addSavingsBankAccount - Happy Path",
 			"request": {
 				"auth": {
 					"type": "bearer",
