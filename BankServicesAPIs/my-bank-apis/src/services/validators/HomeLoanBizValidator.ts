@@ -31,8 +31,8 @@ export class HomeLoanBizValidator
     }
 
     // Is Property Location of the home loan empty or null?
-    if (!homeLoan.propertyLocation || homeLoan.propertyLocation.trim() === '') {
-      validationFailures.push(new BizValidationFailure('PropertyLocation', 'Property Location of the home loan should not be empty.'));
+    if (!homeLoan.location || homeLoan.location.trim() === '') {
+      validationFailures.push(new BizValidationFailure('Location', 'Property Location of the home loan should not be empty.'));
     }
     
     // Applicable, only if the instance is already existing - is ID present?

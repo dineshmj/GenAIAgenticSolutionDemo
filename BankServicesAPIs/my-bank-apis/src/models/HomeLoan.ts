@@ -4,5 +4,5 @@ export interface HomeLoan {
   customerId: number;
   loanAmount: number;
   loanTenure: number;
-  propertyLocation: string;
+  location: string;
 }

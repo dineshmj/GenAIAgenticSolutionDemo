@@ -42,6 +42,7 @@ export class HomeLoanController {
         @Param('id') id: number,
         @Res() response: Response): Promise<HomeLoan | null> {
         // Call service to get specific home loan.
+        console.log("Inside Search By ID")
         const serviceResponse = await this.homeLoanService.getHomeLoanById (id);
 
         if (!serviceResponse?.data) {

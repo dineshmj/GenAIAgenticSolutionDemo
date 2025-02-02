@@ -15,7 +15,7 @@ export class HomeLoanService
       customerName: 'Chuck Johns',
       customerId: 1024,
       loanAmount: 12000,
-      propertyLocation: 'Sydney',
+      location: 'Sydney',
       loanTenure: 10
     },
     {
@@ -23,7 +23,7 @@ export class HomeLoanService
       customerName: 'Jane Smith',
       customerId: 2048,
       loanAmount: 15000,
-      propertyLocation: 'Melbourne',
+      location: 'Melbourne',
       loanTenure: 8
     },
     {
@@ -31,7 +31,7 @@ export class HomeLoanService
       customerName: 'Alice Johnson',
       customerId: 4096,
       loanAmount: 18000,
-      propertyLocation: 'Canberra',
+      location: 'Canberra',
       loanTenure: 12
     },
     {
@@ -39,7 +39,7 @@ export class HomeLoanService
       customerName: 'Bob Brown',
       customerId: 8192,
       loanAmount: 10000,
-      propertyLocation: 'Brisbane',
+      location: 'Brisbane',
       loanTenure: 16
     },
   ];

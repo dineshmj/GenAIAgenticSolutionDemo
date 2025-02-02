@@ -10,6 +10,8 @@ import { RolesGuard } from './guards/rolesGuard';
 import { ConfigModule } from '@nestjs/config';
 import { Reflector } from '@nestjs/core';
 import { JWT_SIGNING_KEY } from './config/secrets';
+import { SavingsBankAccountModule } from './modules/savingsBankAccount/savingsBankAccount.module';
+import { SavingsBankAccountController } from '@controllers/bankaccount/bankaccount.controller';
 
 @Module({
   imports: [
@@ -18,8 +20,9 @@ import { JWT_SIGNING_KEY } from './config/secrets';
       signOptions: { expiresIn: '1h' },  // Token expiration time
     }),
     HomeLoanModule,
+    SavingsBankAccountModule,
     ConfigModule.forRoot ()],
-  controllers: [AppController, HomeLoanController, AuthenticationController],
+  controllers: [AppController, HomeLoanController, SavingsBankAccountController, AuthenticationController],
   providers: [AppService, JwtAuthGuard, RolesGuard, Reflector],
   exports: [JwtModule],  // Export JwtModule if needed elsewhere
 })

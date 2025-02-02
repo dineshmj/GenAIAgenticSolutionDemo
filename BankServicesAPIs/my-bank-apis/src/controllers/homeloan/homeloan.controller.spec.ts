@@ -31,7 +31,7 @@ describe('HomeLoanController', () => {
           customerId: 'Doe',
           loanAmount: new Date(1990, 5, 15),
           email: 'john.doe@example.com',
-          propertyLocation: '1234567890',
+          location: '1234567890',
           loanTenure: '123-45-6789', // Added SSN
         },
         {
@@ -40,7 +40,7 @@ describe('HomeLoanController', () => {
           customerId: 'Smith',
           loanAmount: new Date(1985, 8, 25),
           email: 'jane.smith@example.com',
-          propertyLocation: '0987654321',
+          location: '0987654321',
           loanTenure: '987-65-4321', // Added SSN
         },
       ];
