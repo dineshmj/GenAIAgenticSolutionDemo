@@ -92,7 +92,7 @@ def user_wants_to_exit(user_input):
     decision = response.choices[0].message.content.strip()
     return decision == "Quit"
 
-def call_chat_gpt_api(context, tools):
+def call_chat_gpt_api_for_next_conversation_question(context, tools):
     """
     Calls the Chat GPT API to generate a response based on the provided context.
     The context includes a predefined system message and the conversation so far.
@@ -110,6 +110,22 @@ def call_chat_gpt_api(context, tools):
     )
 
     return response
+
+def present_user_with_record_creation_success (context, id, service_name):
+    """
+    Calls the Chat GPT API to generate a "successfully created" response message based on the provided context.
+    The context includes a predefined system message and the conversation so far.
+    """
+    messages = [
+        {"role": "system", "content": f"You are a helpful banking agent. A new {service_name} record has been created, and its ID is {id}. You can get the name of the customer from the `messages` collection. Prepare a nice message to tell the customer about the newly created record and its ID. An example would be: `I'm glad to tell you that we have created a new {service_name} for you. Here is the account ID: {id}`. Please your own style every time for the message." }
+    ] + [{"role": "user", "content": msg} for msg in context]
+    
+    response = openai.chat.completions.create(
+        model = "gpt-4o-mini",
+        messages = messages
+    )
+
+    return response.choices[0].message.content.strip()
 
 def main():
     """
@@ -174,7 +190,7 @@ def main():
         user_replies.append(user_input)
         
         # With the updated context, call Chat GPT API.
-        gpt_response = call_chat_gpt_api(user_replies, tools)
+        gpt_response = call_chat_gpt_api_for_next_conversation_question(user_replies, tools)
         
         if gpt_response.choices[0].message.tool_calls:
             # Chat GPT API response implies to make `Function Call`
@@ -185,11 +201,23 @@ def main():
             function_args["token"] = jwt_token
             
             if function_name == "call_bank_account_api":
+                print(f"\nMina: I need a moment to create a new Savings Bank Account for you.")
+                print(f"\nMina: Please wait ...\n")
+
                 account_id = call_bank_account_api(function_args)
-                print(f"\nMina: Your Savings Bank Account has been created successfully. Your Account ID is {account_id}.")
+
+                message_to_user = present_user_with_record_creation_success (user_replies, account_id, "Savings Bank Account")
+                print(f"Mina: {message_to_user}")
+                print(f"\n---------------------------------------------------------------.")
             elif function_name == "call_home_loan_api":
+                print(f"\nMina: I need a moment to issue new Home Loan for you.")
+                print(f"\nMina: Please wait ...\n")
+                
                 loan_id = call_home_loan_api(function_args)
-                print(f"\nMina: Your Home Loan has been created successfully. Your Loan ID is {loan_id}.")
+                
+                message_to_user = present_user_with_record_creation_success (user_replies, loan_id, "Home Loan")
+                print(f"Mina: {message_to_user}")
+                print(f"\n---------------------------------------------------------------.")
             else:
                 print("\nMina: Unknown function call!")
                 continue

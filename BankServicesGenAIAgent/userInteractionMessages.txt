@@ -1,16 +1,86 @@
-Home Loan indicating messages from the user:
-===========================================
+Sample conversation 1 (both services):
+=====================================
 
-    I am Chuck Burne, and I have just moved in to Brisbane. I am thinking to buy a house here.
+Signing in to APIs...
+Signed in successfully!
 
-    I am Chuck Burne. I am already a customer in your bank, and my Customer ID is 1024.
-    I have just moved in to Brisbane, and I am thinking to buy an Apartment here.
+Greetings! I am Monitory Information Network Agent (MINA).
 
+How may I assist you today?
+You: I'm Chuck Burnes. My sister Sarah Thomas just moved to Brisbane, and she is looking to purchase a new Apartment in Kelvin Groves in Brisbane.
 
-Savings Bank Account indicating messgaes from the user:
-======================================================
+Mina: It sounds like your sister is interested in applying for a Home Loan. 
 
-    I am Chuck Burne, and I have just moved in to Brisbane as I got a job here. But I don't have any Savings Bank Accounts here.
+To get started on the home loan application, I need the following details:
 
-    I am Chuck Burne. I am already a customer in your bank, and my Customer ID is 1024.
-    I got a new job in 'Kelvin Grove' town in Brisbane. However, I don't have any bank accounts to use as Salary Account in that town.
+1. Unique customer ID for your sister.
+2. Requested loan amount.
+3. Loan tenure in years.
+
+Could you please provide the unique customer ID first?
+You: Her customer ID is 9876.
+
+Mina: Thank you! Now, could you please provide the requested loan amount?
+You: The apartment costs three and a half million, and she has two hundred thousand AUD with her.
+
+Mina: Got it! The requested loan amount would be the apartment cost minus her deposit:
+
+Requested Loan Amount = Apartment Cost - Deposit
+Requested Loan Amount = 3,500,000 - 200,000 = 3,300,000 AUD
+
+Now, could you please provide the loan tenure in years?
+You: She is looking for 15 years tenure.
+
+Mina: I need a moment to issue new Home Loan for you.
+
+Mina: Please wait ...
+
+Mina: Thank you for providing all the necessary details! I will proceed with creating the Home Loan record for your sister Sarah Thomas.
+
+Just to summarize:
+- Customer ID: 9876
+- Requested Loan Amount: 3,300,000 AUD
+- Loan Tenure: 15 years
+
+I'll create the record now.
+
+*Creating Home Loan record...*
+
+I'm pleased to inform you that the Home Loan record has been successfully created for Sarah Thomas! Here is the account ID: 13. If you have any further questions or need assistance, feel free to ask!
+
+---------------------------------------------------------------.
+
+Mina: How may I assist you now?
+You: My sister Sarah Thomas has just moved in to Kelvin Groves in Brisbane. She got a new job here. However, she doesn't have a Bank Account to use as salary account.
+
+Mina: It looks like your sister, Sarah Thomas, is interested in opening a Savings Bank Account.
+
+To proceed, I will need the following mandatory details from her:
+1. Unique customer ID
+2. Initial deposit amount
+3. City where the account is opened (which you already provided as Brisbane)
+4. Branch code of the bank
+
+Let's start with her unique customer ID. What is it?
+You: It is 9876
+
+Mina: Great! Next, could you please provide the initial deposit amount for the Savings Bank Account?
+You: She has three thousand AUD with her.
+
+Mina: Thank you! Now, I just need the branch code of the bank where Sarah would like to open the account. What is the branch code?
+You: It is Bri008
+
+Mina: I need a moment to create a new Savings Bank Account for you.
+
+Mina: Please wait ...
+
+Mina: Thank you for providing all the necessary details! I have successfully created a new Savings Bank Account for Sarah Thomas. The account has been registered with the ID: 13.
+
+I'm excited for her to start using her new account. If she has any questions or needs assistance, feel free to reach out!
+
+---------------------------------------------------------------.
+
+Mina: How may I assist you now?
+You: Nothing more. Thanks for your help!
+
+Mina: Thank you for visiting! Have a great day.
