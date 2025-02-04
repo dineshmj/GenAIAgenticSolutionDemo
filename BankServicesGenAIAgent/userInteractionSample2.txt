@@ -1,0 +1,87 @@
+Signing in to APIs...
+Signed in successfully!
+
+
+Greetings! I am Monitory Information Network Agent (MINA).
+
+How may I assist you today?
+You: Hi Mina! I'm Will Smith. I just moved to Brisbane today. I'm planning to live in Kelvin Groves in Brisbane.
+
+Mina: Hello Will! It's great to hear from you. It sounds like you're looking to set up something related to your new home in Brisbane. 
+
+Could you please let me know if you're interested in opening a Savings Bank Account or applying for a Home Loan?
+You: I have found an Apartment in Kelvin Groves, and I really want to buy it.
+
+Mina: Got it, Will! You're interested in applying for a Home Loan to purchase the apartment in Kelvin Groves.
+
+Let's get started with your application. I'll need a few details from you:
+
+1. What is the amount you are looking to borrow (loan amount)?
+You: The Apartment costs 3.2 million AUD. I have 200 thousand AUD at the moment to shell out.
+
+Mina: Thank you for that information, Will. To confirm, your requested loan amount will be 3.2 million AUD (total cost) minus your down payment of 200 thousand AUD. That means your loan amount will be 3 million AUD.
+
+Next, could you please tell me the loan tenure in years that you are planning to apply for?
+You: I need the loan for at least 12 years.
+
+Mina: Thank you, Will! Here's what I have for your home loan application:
+
+- **Loan Amount:** 3 million AUD
+- **Location of the Property:** Kelvin Groves, Brisbane
+- **Loan Tenure:** 12 years
+
+Now, I just need your Full Name and Unique Customer ID to complete the application. Could you please provide those?
+You: My full name is Will Smith.
+
+Mina: Thank you, Will! I have your full name. Now, could you please provide your Unique Customer ID?
+You: It is 1024.
+
+Mina: I need a moment to issue new Home Loan for you.
+
+Mina: Please wait ...
+
+Mina: Thank you for providing your Unique Customer ID, Will! Your Home Loan application is now complete. 
+
+I'm delighted to inform you that we have successfully created a new Home Loan record for you. Here is your account ID: **14**. If you have any questions or need further assistance, feel free to reach out. Congratulations on taking this exciting step towards your new apartment in Brisbane!
+
+---------------------------------------------------------------.
+
+Mina: How may I assist you now?
+You: My sister Sarah Thomas got a new job in Brisbane. She will be staying with me.
+
+Mina: It sounds like your sister is moving to Brisbane! Are you looking to open a Savings Bank Account for her or do you need a Home Loan for some purpose related to her new job and stay?
+You: She doesn't have a Bank Account to use as Salary Account.        
+
+Mina: It seems like you're looking to open a Savings Bank Account for your sister. Could you please provide me with the following details?
+
+1. Full name of the customer (your sister).
+You: It is Sarah Thomas.
+
+Mina: Thank you!
+
+Next, could you please provide me with the Unique Customer ID for Sarah?
+You: Her customer ID is 9876
+
+Mina: Great! Now, could you please provide the initial deposit amount for the Savings Bank Account?
+You: She has around five thousand AUD with her.
+
+Mina: Thank you! Next, could you please provide the city where the account will be opened?
+You: It is Kelvin Groves in Brisbane.
+
+Mina: Finally, could you please provide the branch code of the bank where the account will be opened?
+You: It is Bri008.
+
+Mina: I need a moment to create a new Savings Bank Account for you.
+
+Mina: Please wait ...
+
+Mina: Thank you for providing all the necessary information! 
+
+I’m glad to inform you that we have successfully created a new Savings Bank Account for Sarah Thomas. Here is her account ID: 14. If you have any further questions or need assistance, feel free to ask!
+
+---------------------------------------------------------------.
+
+Mina: How may I assist you now?
+You: I'm done. Thank you for your help!
+
+Mina: Thank you for visiting! Have a great day.
